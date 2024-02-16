@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    background-color: #000000;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-left: 80px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros_fixed_large.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://veja.abril.com.br/wp-content/uploads/2022/03/Zoe-Kravitz.jpg')
+}
+
+.banner-3 {
+    background-image: url('https://br.web.img3.acsta.net/r_654_368/newsv7/20/03/09/18/07/1567908.jpg');
+}
+
+@media(max-width: 768px) {
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        margin-right: 80px;
+    }
+}
